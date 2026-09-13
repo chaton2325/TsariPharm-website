@@ -2172,11 +2172,11 @@ iframe {
   .testi-card blockquote { font-size: 1rem; }
   .testi-card::before { font-size: 4rem; top: 0; left: 16px; }
 
-  /* Tech stack — deux par ligne, même sur mobile */
-  .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-  .tech-cat { padding: 20px 16px; }
-  .tech-cat h4 { font-size: 0.7rem; }
-  .tech-pills span { padding: 6px 11px; font-size: 0.72rem; }
+  /* Tech stack — pleine largeur sur mobile (les étiquettes ont besoin de place) */
+  .tech-grid { grid-template-columns: 1fr; gap: 14px; }
+  .tech-cat { padding: 24px 20px; }
+  .tech-cat h4 { font-size: 0.75rem; }
+  .tech-pills span { padding: 7px 13px; font-size: 0.8rem; }
 
   /* Industries */
   .industry-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
