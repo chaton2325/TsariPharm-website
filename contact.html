@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TsariPharm</title>
+    <link rel="icon" href="assets/tsaripharm-icon.jpg" type="image/jpeg">
+    <meta name="description" content="Contactez l'équipe TsariPharm pour une démonstration ou une offre personnalisée pour votre pharmacie, formule Local ou Hybride.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo"><img src="assets/tsaripharm-icon.jpg" alt="TsariPharm"><span class="nav-logo-text">Tsari<em>Pharm</em></span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="demo.html" class="nav-cta"><span>Réserver une démo</span></a></li>
+        </ul>
+    </nav>
+
+    <header class="page-hero">
+        <nav class="breadcrumb">
+            <a href="index.html">Accueil</a>
+            <span class="sep">/</span>
+            <span>Contact</span>
+        </nav>
+        <h1>Parlons de votre pharmacie</h1>
+        <p>Une question, une démonstration, une offre personnalisée : notre équipe vous répond rapidement.</p>
+        <div style="position:relative; z-index:2; margin-top:32px;">
+            <a href="demo.html" class="btn btn-primary"><span>Réserver une démo</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="contact-grid">
+                <div>
+                    <span class="pill">Écrivez-nous</span>
+                    <h2 style="margin-bottom: 26px;">On vous répond <em style="font-style:normal; background: var(--grad-pharma-h); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">rapidement</em>.</h2>
+
+                    <form id="contact-form">
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="nom">Nom complet</label>
+                                <input type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pharmacie">Nom de la pharmacie</label>
+                                <input type="text" id="pharmacie" name="pharmacie">
+                            </div>
+                        </div>
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone / WhatsApp</label>
+                                <input type="tel" id="telephone" name="telephone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formule">Formule qui vous intéresse</label>
+                            <select id="formule" name="formule">
+                                <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+                                <option value="Local">Formule Local</option>
+                                <option value="Hybride">Formule Hybride</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre pharmacie : nombre de postes, nombre d'officines, besoins particuliers..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><span>Envoyer le message</span></button>
+                        <p id="contact-status" style="margin-top:16px; font-size:0.9rem; color: var(--green-2); display:none;">Merci ! Votre messagerie va s'ouvrir pour finaliser l'envoi vers notre équipe.</p>
+                    </form>
+                </div>
+
+                <div>
+                    <span class="pill">Coordonnées</span>
+                    <h3 style="margin: 20px 0 24px; font-size:1.3rem;">Autres moyens de nous joindre</h3>
+
+                    <div class="contact-row">
+                        <span class="ico">✉</span>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:contact@tsaripharm.com">contact@tsaripharm.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <span class="ico">☎</span>
+                        <div>
+                            <h4>Téléphone / WhatsApp</h4>
+                            <p>Communiqué sur demande</p>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <span class="ico">⌖</span>
+                        <div>
+                            <h4>Zone</h4>
+                            <p>Cameroun</p>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <span class="ico">⚿</span>
+                        <div>
+                            <h4>Paiement</h4>
+                            <p>100% en ligne, sécurisé</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-note">
+                        Les tarifs détaillés des formules <strong>Local</strong> et <strong>Hybride</strong> seront bientôt publiés. En attendant, écrivez-nous : nous revenons vers vous avec une offre adaptée à la taille de votre pharmacie.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <span class="logo-chip"><img src="assets/tsaripharm-icon.jpg" alt="TsariPharm" class="footer-logo"></span>
+                <h3>TsariPharm</h3>
+                <p style="margin-top:14px; color: rgba(255,255,255,0.65);">Le logiciel de gestion de pharmacie qui réunit ventes, stock, caisse, finances et personnel dans un seul outil fiable.</p>
+                <div class="joel-credit">
+                    <span class="logo-chip"><img src="assets/joelcomputech-logo.png" alt="Joel Computech Solutions"></span>
+                    <span>Un produit Joel Computech Solutions</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Produit</h4>
+                <a href="fonctionnalites.html">Fonctionnalités</a>
+                <a href="tarifs.html">Tarifs &amp; formules</a>
+                <a href="demo.html">Réserver une démo</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Formules</h4>
+                <a href="tarifs.html#local">Formule Local</a>
+                <a href="tarifs.html#hybride">Formule Hybride</a>
+                <a href="tarifs.html#paiement">Paiement en ligne</a>
+            </div>
+            <div>
+                <h4>Nous joindre</h4>
+                <div class="footer-contact">
+                    <div><span class="ico">⌖</span><span>Cameroun</span></div>
+                    <div><span class="ico">✉</span><a href="mailto:contact@tsaripharm.com">contact@tsaripharm.com</a></div>
+                    <div><span class="ico">⚿</span><span>Paiement 100% en ligne</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 TsariPharm — Joel Computech Solutions. Tous droits réservés. · Développé par Tsari Sila</div>
+    </footer>
+    <script src="animations.js" defer></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var data = {
+                nom: document.getElementById('nom').value,
+                pharmacie: document.getElementById('pharmacie').value,
+                email: document.getElementById('email').value,
+                telephone: document.getElementById('telephone').value,
+                formule: document.getElementById('formule').value,
+                message: document.getElementById('message').value
+            };
+            var subject = 'Demande de contact TsariPharm — ' + (data.pharmacie || data.nom);
+            var body = 'Nom : ' + data.nom + '\n' +
+                'Pharmacie : ' + data.pharmacie + '\n' +
+                'Email : ' + data.email + '\n' +
+                'Téléphone : ' + data.telephone + '\n' +
+                'Formule souhaitée : ' + data.formule + '\n\n' +
+                'Message :\n' + data.message;
+            var mailto = 'mailto:contact@tsaripharm.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            document.getElementById('contact-status').style.display = 'block';
+            window.location.href = mailto;
+        });
+    </script>
+</body>
+</html>
