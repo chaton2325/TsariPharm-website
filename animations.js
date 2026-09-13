@@ -401,4 +401,28 @@
     });
   }
 
+  /* ---------- LIGHTBOX (captures d'écran plein écran) ---------- */
+  const shotTriggers = document.querySelectorAll('[data-lightbox-trigger]');
+  if (shotTriggers.length) {
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox';
+    overlay.innerHTML = '<button class="lightbox-close" aria-label="Fermer">✕</button><img alt="">';
+    document.body.appendChild(overlay);
+    const overlayImg = overlay.querySelector('img');
+    const closeLightbox = () => overlay.classList.remove('is-open');
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeLightbox(); });
+    overlay.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+    shotTriggers.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const wrap = btn.closest('.shot-wrap');
+        const source = wrap ? wrap.querySelector('img[data-lightbox]') : null;
+        if (!source) return;
+        overlayImg.src = source.src;
+        overlayImg.alt = source.alt;
+        overlay.classList.add('is-open');
+      });
+    });
+  }
+
 })();
