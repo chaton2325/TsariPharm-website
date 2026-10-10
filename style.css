@@ -1779,6 +1779,16 @@ iframe {
   margin-bottom: 8px;
   display: flex; align-items: baseline; gap: 6px;
 }
+.price-old {
+  display: inline-block; align-self: flex-start; width: fit-content; margin: 0 0 6px; padding: 4px 14px;
+  background: var(--white); border-radius: var(--radius-pill);
+  font-family: 'Urbanist', sans-serif; font-size: 1.3rem; font-weight: 800;
+  color: #e11d2e; text-decoration: line-through;
+  text-decoration-color: #e11d2e; text-decoration-thickness: 3px;
+  box-shadow: 0 4px 14px rgba(225,29,46,0.35);
+}
+.price-card.featured .price-old { color: #e11d2e; }
+.price-table-old { color: #e11d2e; font-weight: 800; text-decoration-thickness: 2px; }
 .price-amount .currency { font-size: 1.4rem; font-weight: 700; }
 .price-amount .period { font-size: 0.95rem; color: var(--muted); font-weight: 500; margin-left: 4px; }
 .price-card.featured .price-amount .period { color: rgba(255,255,255,0.8); }
