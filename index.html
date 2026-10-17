@@ -15,12 +15,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="promo-bar" role="region" aria-label="Services en ligne">
+        <span class="promo-bar-text">Nouveau : commandez en ligne</span>
+        <a href="installation.html" class="promo-bar-link"><span class="pl-full">Commander une installation</span><span class="pl-short">Installation</span></a>
+        <a href="inventaire.html" class="promo-bar-link"><span class="pl-full">Commander un inventaire</span><span class="pl-short">Inventaire</span></a>
+    </div>
     <nav>
         <a href="index.html" class="nav-logo"><img src="assets/tsaripharm-icon.jpg" alt="TsariPharm"><span class="nav-logo-text">Tsari<em>Pharm</em></span></a>
         <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
             <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="installation.html" class="nav-order">Installation</a></li>
+            <li><a href="inventaire.html" class="nav-order">Inventaire</a></li>
             <li><a href="a-propos.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="demo.html" class="nav-cta"><span>Réserver une démo</span></a></li>
@@ -34,9 +41,10 @@
                 <span class="hero-eyebrow">Gestion de pharmacie — Local &amp; Cloud</span>
                 <h1>Le logiciel qui simplifie <em>la gestion de votre pharmacie</em>.</h1>
                 <p class="lead">Ventes, stock, caisse, finances et personnel : TsariPharm réunit tout ce dont votre officine a besoin dans un seul outil fiable, pensé pour le comptoir comme pour le back-office.</p>
-                <div class="hero-btns">
+                <div class="hero-btns hero-btns--3">
                     <a href="demo.html" class="btn btn-primary"><span>Réserver une démo</span></a>
-                    <a href="fonctionnalites.html" class="btn btn-ghost"><span>Découvrir les fonctionnalités</span></a>
+                    <a href="installation.html" class="btn btn-ghost"><span>Commander une installation</span></a>
+                    <a href="inventaire.html" class="btn btn-ghost"><span>Commander un inventaire</span></a>
                 </div>
                 <a href="https://joelcomputech.com" target="_blank" rel="noopener" class="hero-credit">
                     <span class="hero-credit-logo"><img src="assets/joelcomputech-logo.png" alt=""></span>
@@ -61,6 +69,44 @@
     </header>
 
     <main>
+
+        <!-- SERVICES : INSTALLATION & INVENTAIRE (commande en ligne) -->
+        <section id="services" style="scroll-margin-top:110px;">
+            <div class="section-head">
+                <span class="pill">Nos services</span>
+                <h2>Commandez <em>en ligne</em>, nous nous occupons du reste.</h2>
+                <p>Faites installer TsariPharm dans votre pharmacie ou faites réaliser l'inventaire de votre stock par notre équipe : choisissez votre pays et votre langue, payez en ligne et suivez l'avancement par e-mail.</p>
+            </div>
+            <div class="pricing-grid pricing-grid--2">
+                <div class="price-card featured">
+                    <span class="price-badge">Service</span>
+                    <span class="price-tier">Mise en service</span>
+                    <h3>Installation</h3>
+                    <p class="price-desc">Notre équipe installe et met en service TsariPharm dans votre pharmacie, avec en option l'inventaire initial et la formation de votre personnel.</p>
+                    <ul class="price-features">
+                        <li>Installation et mise en service par notre équipe</li>
+                        <li>Inventaire initial et formation en option</li>
+                        <li>Paiement 100% en ligne, tarif affiché avant de payer</li>
+                        <li>E-mail à chaque étape, dans votre langue</li>
+                    </ul>
+                    <a href="https://tsaripharm-admin.joelcomputech.com/installation" target="_blank" rel="noopener" class="btn btn-dark"><span>Commander une installation</span></a>
+                    <p style="margin-top:14px;"><a href="installation.html" class="svc-link" style="color:#fff;background:rgba(255,255,255,0.18);">Comment ça marche ?</a></p>
+                </div>
+                <div class="price-card">
+                    <span class="price-tier">Stock</span>
+                    <h3>Inventaire</h3>
+                    <p class="price-desc">Une équipe TsariPharm compte et enregistre le stock de votre pharmacie, point de vente par point de vente, à la date convenue avec vous.</p>
+                    <ul class="price-features">
+                        <li>Forfait + tarif par point de vente supplémentaire</li>
+                        <li>Date souhaitée à discuter avec notre équipe</li>
+                        <li>Paiement 100% en ligne, tarif affiché avant de payer</li>
+                        <li>Rapport et suivi par e-mail</li>
+                    </ul>
+                    <a href="https://tsaripharm-admin.joelcomputech.com/inventaire" target="_blank" rel="noopener" class="btn btn-outline-dark"><span>Commander un inventaire</span></a>
+                    <p style="margin-top:14px;"><a href="inventaire.html" class="svc-link">Comment ça marche ?</a></p>
+                </div>
+            </div>
+        </section>
 
         <!-- MASCOTTE / ASSISTANTE IA -->
         <section class="section-full" style="background: var(--green-soft); padding: 80px 56px;">
@@ -367,6 +413,7 @@
             <h2>Prêt à moderniser<br>votre <em style="font-style:normal; background: rgba(0,0,0,0.15); padding: 2px 12px; border-radius: 8px;">officine</em> ?</h2>
             <a href="contact.html" class="btn btn-dark"><span>Nous contacter</span></a>
         </div>
+        <p class="cta-order">Ou commandez directement : <a href="installation.html">une installation</a> · <a href="inventaire.html">un inventaire</a></p>
     </section>
 
     <footer>
@@ -387,6 +434,12 @@
                 <a href="demo.html">Réserver une démo</a>
                 <a href="a-propos.html">À propos</a>
                 <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <a href="installation.html">Commander une installation</a>
+                <a href="inventaire.html">Commander un inventaire</a>
+                <a href="demo.html">Réserver une démo</a>
             </div>
             <div class="footer-links">
                 <h4>Formules</h4>
